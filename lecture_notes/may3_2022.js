@@ -41,11 +41,11 @@ class Fighter{
     attack(opponent){
         if (opponent instanceof Fighter) { //make sure the opponent is a Fighter before doing anything
             opponent.percentage += this.strength;
-            console.log('${this.name} attacked ${opponent.name} and dealt ${this.strength} percent damage') //gotta use backticks to use js syntax in the string!
+            console.log('${this.name} attacked ${opponent.name} and dealt ${this.strength} percent damage') //gotta use backticks to use variables inside the string!
         }
     }
     special(opponent){
-        if (opponent instanceof Fighter) { //make sure the opponent is a Fighter before doing anything
+        if (opponent instanceof Fighter) {
             opponent.percentage += this.strength * this.weight;
             console.log(`${this.name} attacked ${opponent.name} with a special attack and dealt ${this.strength * this.weight} percent damage`)
         }
