@@ -19,3 +19,5 @@ class Ninja{
         console.log(`${this.name} drank some sake. +10 to health. Health is now ${this.health}`)
     }
 }
+
+module.exports = Ninja;

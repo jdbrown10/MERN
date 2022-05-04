@@ -1,4 +1,4 @@
-const Ninja = require("./ninja") //importing the Fighter class
+const Ninja = require("./ninja") //importing the ninja class
 
 
 class Sensei extends Ninja{
@@ -16,9 +16,6 @@ class Sensei extends Ninja{
     }
 }
 
-// example output
 const superSensei = new Sensei("Master Splinter");
 superSensei.speakWisdom();
-// -> "What one programmer can do in one month, two programmers can do in two months."
 superSensei.showStats();
-// -> "Name: Master Splinter, Health: 210, Speed: 10, Strength: 10"
