@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import ClassCounter from './components/ClassCounter';
-import FunctionalCounter from './components/FunctionalCounter';
+import HookForm from './components/HookForm';
 
 function App() {
   return (
     <div className="App">
-      <ClassCounter/>
-      <FunctionalCounter/>
+      <h1>Hook Form</h1>
+      <HookForm/>
     </div>
   );
 }
