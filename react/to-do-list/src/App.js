@@ -12,6 +12,10 @@ function App() {
     setNewTodo("");
   }
 
+  const handleTodoDelete = (event, delIdx) => {
+
+  }
+
   return (
     <div style={{textAlign: "center"}}>
       <br />
@@ -19,7 +23,7 @@ function App() {
         <div>
           <input onChange={(event) => {setNewTodo(event.target.value)}} type="text" value={newTodo}/>
         </div>
-        <div>
+        <div> 
           <input type="submit" value="submit"/>
         </div>
       </form>
@@ -27,6 +31,7 @@ function App() {
         return (
           <div key={i}>
             <span>{todo}</span>
+            <button onClick={(event) => {handleTodoDelete(i)}}>Delete</button>
           </div>
         );
       })}
