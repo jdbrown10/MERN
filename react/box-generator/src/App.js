@@ -36,18 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Box Generator</h1>
-      <form onSubmit={onSubmitHandler}>
-        <input type="text" name="color" placeholder="What color?" onChange={onChangeHandler}/>
-        <input type="submit"/>
-      </form>
-      <div className="box-container">
-      {
-        boxes.map((item)=>{
-          return <Box color={item.color}/>
-        })
-      }
-      </div>
+      
     </div>
   );
 }
