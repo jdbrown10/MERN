@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Product = (props) => {
-    const {title, price, description} = props.product;
+    const {title, price, description, _id} = props.product;
     return(
         <div className="productBox">
-            <h1>Product</h1>
-            <h2 className="mb-2">{title}</h2>
+            <h2 className="mb-2"><Link to={`/products/${_id}`}>{title}</Link></h2>
             <h3>Price: {price}</h3>
             <h3>Description: {description} </h3>
         </div>
