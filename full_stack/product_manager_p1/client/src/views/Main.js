@@ -1,23 +1,23 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Sundae from "../components/Sundae";
+import Product from "../components/Product";
 
 const Main = (props) => {
-    const [sundaes, setSundaes] = useState([]);
+    const [products, setProducts] = useState([]);
     useEffect(()=>{
-        axios.get("http://localhost:8000/api/sundaes/all")
+        axios.get("http://localhost:8000/api/product/all")
             .then(res=>{
                 // console.log(res.data)
-                setSundaes(res.data);
+                setProducts(res.data);
             })
             .catch(err=>console.log(err));
     },[])
 
     return(
-        <div className="sundaeList">
+        <div className="productList">
             {
-                sundaes.map((sundae,i)=>{
-                    return <Sundae key={sundae._id} sundae={sundae}/>
+                products.map((product,i)=>{
+                    return <Product key={product._id} product={product}/>
                 })
             }
         </div>
