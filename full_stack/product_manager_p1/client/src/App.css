@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.productBox{
+  height: 400px;
+  width: 250px;
+  border: 3px dotted brown;
+  background-color: blanchedalmond;
+}
+
+.productList{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
