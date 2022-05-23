@@ -21,7 +21,7 @@ const Create = (props) => {
     // const onSubmitHandler = (event) => {
     //     event.preventDefault();
 
-    //     axios.post("http://localhost:8000/api/sundaes/create", form)
+    //     axios.post("http://localhost:8000/api/products/create", form)
     //         .then(res =>{
     //             console.log(res);
     //             history.push("/");
