@@ -5,7 +5,7 @@ import Product from "../components/Product";
 const Main = (props) => {
     const [products, setProducts] = useState([]);
     useEffect(()=>{
-        axios.get("http://localhost:8000/api/product/all")
+        axios.get("http://localhost:8000/api/products/all")
             .then(res=>{
                 // console.log(res.data)
                 setProducts(res.data);
