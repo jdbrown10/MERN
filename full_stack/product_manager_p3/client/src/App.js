@@ -4,6 +4,7 @@ import Main from './views/Main';
 import {Switch, Route, Link} from "react-router-dom";
 import Create from './views/Create';
 import SingleProduct from './views/SingleProduct';
+import Edit from './views/Edit';
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
 
         <Route exact path="/products/:_id">
           <SingleProduct/>
+        </Route>
+
+        <Route exact path="/products/:_id/edit">
+          <Edit/>
         </Route>
       </Switch>
     </div>

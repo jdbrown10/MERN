@@ -8,7 +8,7 @@ const Create = (props) => {
         price: 0,
         description: ""
     })
-    
+
     const history = useHistory();
 
     const onChangeHandler = (event) => {

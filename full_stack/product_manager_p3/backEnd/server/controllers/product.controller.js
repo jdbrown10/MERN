@@ -28,7 +28,7 @@ module.exports.deleteOneProduct = (req,res) => {
     .catch(err => res.status(400).json({message:"That didn't quite work", err}))
 }
 module.exports.updateOneProduct = (req,res) => {
-    Product.updateOne({_id: req.params._id}, req.body)
+    Product.updateOne({_id: req.params._id}, req.body, {runValidators:true})
     .then(results => res.json(results))
     .catch(err => res.status(400).json({message:"That didn't quite work", err}))
 }
